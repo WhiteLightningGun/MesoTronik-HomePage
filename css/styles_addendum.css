@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#MT {
+    background-color: #01060fb9;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 2px;
+  }
+
+  .img-fluid2 {
+    max-width: 100%;
+    min-width: 125px;
+    height: auto;
+  }
