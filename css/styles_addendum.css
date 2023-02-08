@@ -2,10 +2,10 @@
 
 #MT {
     background-color: #01060fb9;
-    padding: 3px;
+    padding: 4px;
     padding-left: 6px;
     padding-right: 6px;
-    border-radius: 2px;
+    border-radius: 8px;
   }
 
   .img-fluid2 {
@@ -20,7 +20,7 @@
   }
 
   .text-neutralgrey {
-    color: #fa4300;
+    color: #ebe9e6;
   }
 
   .fade-in-A {
