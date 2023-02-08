@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 529 529" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-364.741,-1472.47)">
+        <g transform="matrix(0.47888,0,0,0.47888,139.766,1188.45)">
+            <rect x="469.794" y="593.101" width="1103.57" height="1103.57" style="fill:rgb(0,219,255);"/>
+        </g>
+        <g transform="matrix(1,0,0,1,1.34971,560.941)">
+            <g transform="matrix(266.667,0,0,266.667,791.677,1272.97)">
+            </g>
+            <text x="441.277px" y="1272.97px" style="font-family:'DINCondensed-Bold', 'DIN Condensed';font-weight:700;font-stretch:condensed;font-size:266.667px;">MTK</text>
+        </g>
+        <g transform="matrix(1,0,0,1,36.2959,683.124)">
+            <g transform="matrix(83.3333,0,0,83.3333,738.027,1272.97)">
+            </g>
+            <text x="441.277px" y="1272.97px" style="font-family:'DINCondensed-Bold', 'DIN Condensed';font-weight:700;font-stretch:condensed;font-size:83.333px;">MesoT<tspan x="601.11px 623.777px 654.61px " y="1272.97px 1272.97px 1272.97px ">ron</tspan>iK</text>
+        </g>
+        <g transform="matrix(1,0,0,1,-36.4324,301.329)">
+            <g transform="matrix(83.3333,0,0,83.3333,580.777,1272.97)">
+            </g>
+            <text x="441.277px" y="1272.97px" style="font-family:'DINCondensed-Bold', 'DIN Condensed';font-weight:700;font-stretch:condensed;font-size:83.333px;">13.37</text>
+        </g>
+        <g transform="matrix(1,0,0,1,317.07,301.329)">
+            <g transform="matrix(83.3333,0,0,83.3333,534.277,1272.97)">
+            </g>
+            <text x="441.277px" y="1272.97px" style="font-family:'DINCondensed-Bold', 'DIN Condensed';font-weight:700;font-stretch:condensed;font-size:83.333px;">343</text>
+        </g>
+    </g>
+</svg>

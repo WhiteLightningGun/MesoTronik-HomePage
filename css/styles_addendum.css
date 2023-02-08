@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 #MT {
-    background-color: #01060fb9;
+    background-color: #000817b9;
     padding: 4px;
     padding-left: 6px;
     padding-right: 6px;
     border-radius: 8px;
+    letter-spacing: 1px;
   }
 
   .img-fluid2 {
@@ -16,12 +17,12 @@
 
   .bg-coldblack {
     --bs-bg-opacity: 1;
-    background-color: #121618 !important;
+    background-color: #11171a !important;
   }
 
   .bg-sunset {
     --bs-bg-opacity: 1;
-    background-color: #ff4d00 !important;
+    background-color: #ff3c00 !important;
   }
 
   .text-neutralgrey {
