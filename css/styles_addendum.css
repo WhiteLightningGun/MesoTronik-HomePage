@@ -13,3 +13,28 @@
     min-width: 125px;
     height: auto;
   }
+
+  .bg-warmblack {
+    --bs-bg-opacity: 1;
+    background-color: #170801 !important;
+  }
+
+  .fade-in-A {
+    opacity: 1;
+    position: relative;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fadeInOpacity {
+    0% {
+      top: 100px;
+      opacity: 0;
+    }
+    100% {
+      top: 0px;
+      opacity: 1;
+    }
+  }
