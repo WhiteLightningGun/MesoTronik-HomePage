@@ -19,6 +19,11 @@
     background-color: #121618 !important;
   }
 
+  .bg-sunset {
+    --bs-bg-opacity: 1;
+    background-color: #ff4d00 !important;
+  }
+
   .text-neutralgrey {
     color: #ebe9e6;
   }
