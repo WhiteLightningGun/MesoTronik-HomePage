@@ -71,7 +71,7 @@
     }
   }
 
-  #smCanvasHolder{
+  #smCanvasHolder {
     max-height: 75px;
     max-width: 300px;
     height: auto;
@@ -79,7 +79,7 @@
     margin:auto;
   }
 
-  #PowerBars{
+  #PowerBars {
     border-color: #efedea !important;
     border-width: 2px !important;
 
