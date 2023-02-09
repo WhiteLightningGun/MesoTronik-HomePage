@@ -78,3 +78,9 @@
     text-align: center;
     margin:auto;
   }
+
+  #PowerBars{
+    border-color: #efedea !important;
+    border-width: 2px !important;
+
+  }
