@@ -9,6 +9,8 @@
     letter-spacing: 1px;
   }
 
+
+
   .img-fluid2 {
     max-width: 100%;
     min-width: 125px;
@@ -67,4 +69,12 @@
       left: 0px;
       opacity: 1;
     }
+  }
+
+  #smCanvasHolder{
+    max-height: 75px;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+    margin:auto;
   }
