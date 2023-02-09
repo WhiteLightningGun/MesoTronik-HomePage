@@ -1,3 +1,4 @@
+
 var MainCanvas = document.getElementById("PowerBars");
 var MainContext = MainCanvas.getContext('2d');
 var DivWidth = document.getElementById("smCanvasHolder").clientWidth;
@@ -33,23 +34,23 @@ class Rectangle {
 
         if (this.index < Math.floor(BarArray.length / 2) - 2)
         {
-            MainContext.roundRect(
+            MainContext.rect(
                 this.xPos,
                 this.yPos,
                 this.width,
-                this.height*Math.pow(Math.cos(-this.phase*12 + this.counter/100), 2) + 0.3*DivHeight*((barCount - 3*this.index)/barCount) - 0.4*DivHeight ,
-                this.rounding);
+                this.height*Math.pow(Math.cos(-this.phase*12 + this.counter/100), 2) + 0.3*DivHeight*((barCount - 3*this.index)/barCount) - 0.4*DivHeight
+                );
             
         }
         
         else
         {
-            MainContext.roundRect(
+            MainContext.rect(
                 this.xPos,
                 this.yPos,
                 this.width,
-                this.height*Math.pow(Math.cos(-this.phase*12 + this.counter/100), 2) - 0.3*DivHeight*((barCount - 3*this.index)/barCount) - 0.4*DivHeight ,
-                this.rounding);
+                this.height*Math.pow(Math.cos(-this.phase*12 + this.counter/100), 2) - 0.3*DivHeight*((barCount - 3*this.index)/barCount) - 0.4*DivHeight
+                );
         }
 
         
@@ -103,6 +104,8 @@ function restartRectangles()
     MainCanvas.width = DivWidth;
     MainCanvas.height = DivHeight;
     drawRectangles();
+    
+
 }
 
 window.addEventListener('load', drawRectangles());
@@ -123,18 +126,17 @@ var resizeTimeout;
 window.addEventListener('resize', function() {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(function(){
-      restartRectangles();
+    restartRectangles();
   }, 120);
     console.log("reload function was called");
 
 });
 
-function load_js()
-{
-   var head = document.getElementsByTagName('head')[0];
-   var script = document.createElement('script');
-   script.src = 'js/PowerBarsScript.js';
-   head.appendChild(script);
+
+function reload_js(src) {
+    $('script[src="' + src + '"]').remove();
+    $('<script>').attr('src', src).appendTo('head');
+    console.log("reload_js called")
 }
 
 
