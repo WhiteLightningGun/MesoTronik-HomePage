@@ -6,7 +6,6 @@ MainCanvas.width = DivWidth;
 MainCanvas.height = DivHeight;
 var speed = 0.6;
 
-
 var barCount = 28;
  
 var BarArray = new Array();
@@ -60,7 +59,16 @@ class Rectangle {
             MainContext.fillStyle = "#FFFFFF";
         }
         else {
-            MainContext.fillStyle = "#e52585";  //0d34e3 - alternative blue colour
+            MainContext.fillStyle = "#FA3296";  //0d34e3 - alternative blue colour
+
+            /* Unused Shadow Drawing
+
+            MainContext.shadowColor = '#062a6ea2';
+            MainContext.shadowBlur = 5;
+            MainContext.shadowOffsetX = 0;
+            MainContext.shadowOffsetY = 0;
+            */
+
         }
 
         MainContext.fill();
@@ -69,15 +77,14 @@ class Rectangle {
 
 function drawRectangles() // initialises and adds the rectangle object to BarArray
 {
-    for (let i = 0; i < barCount; i++)
+    for (let i = 0; i < barCount ; i++)
     {
         var rectangle = new Rectangle(
-            (i * DivWidth / (barCount-6)), //x position
-            MainCanvas.height, // y position, formerly: MainCanvas.height,
-            DivWidth / barCount, //width of bar
-            -Math.pow(1, 2) * DivHeight * 0.75 - 0.15 * DivHeight, //height of bar
-            // -Math.pow(Math.cos(((i * 12) / barCount)), 2) * DivHeight*0.75 - 0.15*DivHeight, //spare argument
-            0.001 * DivWidth);
+            (i * DivWidth / (barCount-6)),                          //x position
+            MainCanvas.height - 5,                                  // y position, formerly: MainCanvas.height,
+            DivWidth / barCount,                                    //width of bar
+            -Math.pow(1, 2) * DivHeight * 0.75 - 0.15 * DivHeight,  //height of bar
+            0.01 * DivWidth);                                       //Unused rounding argument
         rectangle.phase = (i / barCount) * Math.PI;
         rectangle.index = i;
         
@@ -85,6 +92,17 @@ function drawRectangles() // initialises and adds the rectangle object to BarArr
     }
     
     draw();
+}
+
+function restartRectangles()
+{
+    MainContext.clearRect(0, 0, MainCanvas.width, MainCanvas.height);
+    BarArray.length = 0; // clear and restart array
+    DivWidth = document.getElementById("smCanvasHolder").clientWidth;
+    DivHeight = document.getElementById("smCanvasHolder").clientHeight;
+    MainCanvas.width = DivWidth;
+    MainCanvas.height = DivHeight;
+    drawRectangles();
 }
 
 window.addEventListener('load', drawRectangles());
@@ -99,3 +117,25 @@ function draw() {
     }
     requestAnimationFrame(draw);
 }
+
+var resizeTimeout;
+
+window.addEventListener('resize', function() {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(function(){
+      restartRectangles();
+  }, 120);
+    console.log("reload function was called");
+
+});
+
+function load_js()
+{
+   var head = document.getElementsByTagName('head')[0];
+   var script = document.createElement('script');
+   script.src = 'js/PowerBarsScript.js';
+   head.appendChild(script);
+}
+
+
+//window.location.reload();
