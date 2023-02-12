@@ -84,3 +84,15 @@
     border-width: 2px !important;
 
   }
+
+  .carousel-item.active {
+    display:block;
+}
+
+.bg-haze{
+  background-color: #1a100483;
+}
+
+#Testimonial1{
+  font-style: italic;
+}
