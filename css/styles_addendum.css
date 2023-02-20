@@ -100,3 +100,10 @@
 .review-link {
   color: orange;
 }
+
+.left-border {
+  border-right:honeydew !important;
+  border-top:honeydew !important;
+  border-bottom:honeydew !important;
+  border-style: solid;
+}
