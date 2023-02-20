@@ -107,3 +107,8 @@
   border-bottom:honeydew !important;
   border-style: solid;
 }
+
+.out-link {
+  color: orange;
+  font-style: italic;
+}
