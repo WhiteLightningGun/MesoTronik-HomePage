@@ -134,3 +134,19 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+
+.link-buttonB {
+  filter: grayscale(1%);
+  transition: filter 0.001s ease;
+}
+
+.link-buttonB:hover {
+  filter: grayscale(99%) brightness(0.9);
+  transition: filter 0.005s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.button-helper {
+  max-width: 160px !important;
+}
+
