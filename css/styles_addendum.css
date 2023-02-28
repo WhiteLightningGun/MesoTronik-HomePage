@@ -147,6 +147,23 @@
   -webkit-backface-visibility: hidden;
 }
 .button-helper {
-  max-width: 160px !important;
+  max-width: 140px !important;
+}
+
+.input1 
+{
+  padding: 4px;
+  border-radius: 4px;
+  width: 50vmin;
+  resize:both;
+  min-width: 200px;
+  
+}
+
+.input1B {
+  height: 200px;
+  display: inline-block !important;
+  min-width: 100%;
+  min-width: 260px;
 }
 

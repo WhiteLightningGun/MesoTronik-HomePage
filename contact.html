@@ -55,44 +55,61 @@
             </nav>
 
             <section class="bg-coldblack text-neutralgrey border-top" id="">
-                <div class="container px-5">
+                <div class="container px-md-5 py-2">
 
-                <div class="row gx-5 py-3">
-                    <div class="col-lg-3 py-2 text-left">
-                        <img class="img-fluid shadow-4-strong my-1 border border-2" src="assets/backgrounds/sonic-waves.jpg" alt="...">
-                    </div>
-
-                    <div class="col-lg-9 text-left">
-                        <h1 class="fw-bolder pt-1">Contact</h1>
-                        <p>Feel free to message me using any of the contacts methods below:</p>
+                    <div class="row">
+                        <div class="col-sm-8 text-left">
+                            <h1 class="fw-bolder pt-1">Contact</h1>
+                            <p>Feel free to message me using any of the contacts methods below:</p>
 
 
+                        <form
+                            action="https://formspree.io/f/xnqyvpvn"
+                            method="POST"
+                            >
+                            <label class="py-1">
+                                Your email: <br>
+                                <input type="email" name="email" placeholder="you@email.com" class="input1">
+                            </label>
+                            <br>
+                            <label class="py-1 ">
+                                Your message:<br>
+                                <textarea name="message" placeholder="Hello Mesotronik..." class="input1 input1B" ></textarea>
+                            </label>
+                            <br>
+                            <!-- your other form fields go here -->
+                            <button type="submit" class="m-1">Send</button>
+                            </form>
+                            </div>
+
+                        <div class="col-sm-4 pt-4">
+                            <img class="img-fluid d-none d-lg-block d-xl-block shadow-4-strong my-1 border border-2" src="assets/backgrounds/sonic-waves.jpg" alt="...">
+                        </div>
+
+                    </div> <!-- Closes row div-->
 
                     <div class="row align-content-center">
-                        <div class="col-sm-3 img-fluid">
+                        <div class="col-sm-2 img-fluid">
                             <p><a href="http://bit.ly/38nwkUV"> 
                                 <img src="assets/Icons/SoundcloudIcon.svg" class="link-button rounded border border-dark button-helper " alt="SoundcloudIcon">
                                 </a>
                             </p>  
                         </div>
-                        <div class="col-sm-3 img-fluid">
-                            <p><a href="http://discordapp.com/users/139484192709804032"> 
-                                <img src="assets/Icons/DiscordIcon3.svg"  class="link-buttonB rounded border border-dark button-helper " alt="SoundcloudIcon">
-                                </a>
+                        <div class="col-sm-2 img-fluid">
+                            <p><a href="http://bit.ly/3xRbPyO"> 
+                                <img src="assets/Icons/DiscordIcon3.svg"  class="link-buttonB rounded border border-dark button-helper " alt="DiscordIcon">
+                                </a> <!-- http://discordapp.com/users/139484192709804032 non-bitly link -->
                                 
                             </p>  
                         </div>
-                        <div class="col-sm-3 img-fluid">
+                        <div class="col-sm-2 img-fluid">
                             <p><a href="http://bit.ly/41kq90k"> 
-                                <img src="assets/Icons/patreonlogo1.svg" class="link-buttonB rounded border border-dark button-helper  " alt="SoundcloudIcon">
+                                <img src="assets/Icons/patreonlogo1.svg" class="link-buttonB rounded border border-dark button-helper  " alt="PatreonIcon">
                                 </a>
                                 
                             </p>  
                         </div>
-                    </div> <!-- Closes row div-->
-
-
-                    </div>
+                    </div> 
 
 
 
@@ -118,7 +135,6 @@
                             </div>
                         </footer>
                     <!-- Script for Canvas Animation -->
-                    <script src="js/PowerBarsScript.js" id="powerbars"></script>
             
                     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
                     <script type="text/javascript" src="slick/slick.min.js"></script>
