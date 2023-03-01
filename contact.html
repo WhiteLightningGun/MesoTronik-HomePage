@@ -60,25 +60,25 @@
                     <div class="row">
                         <div class="col-sm-8 text-left">
                             <h1 class="fw-bolder pt-1">Contact</h1>
-                            <p>Feel free to message me using any of the contacts methods below:</p>
+                            <p>Feel free to message me using any of the methods below:</p>
 
-
+                            <!-- "https://formspree.io/f/xnqyvpvn" -->
                         <form
                             action="https://formspree.io/f/xnqyvpvn"
                             method="POST"
                             >
                             <label class="py-1">
                                 Your email: <br>
-                                <input type="email" name="email" placeholder="you@email.com" class="input1">
+                                <input type="email" name="email" placeholder="you@email.com" required pattern="[^@]+@[^\.]+\..+" class="input1">
                             </label>
                             <br>
                             <label class="py-1 ">
                                 Your message:<br>
-                                <textarea name="message" placeholder="Hello Mesotronik..." class="input1 input1B" ></textarea>
+                                <textarea name="message" placeholder="Hello Mesotronik..." required class="input1 input1B" ></textarea>
                             </label>
                             <br>
                             <!-- your other form fields go here -->
-                            <button type="submit" class="m-1">Send</button>
+                            <button type="submit" class="m-1 send-button">Send</button>
                             </form>
                             </div>
 

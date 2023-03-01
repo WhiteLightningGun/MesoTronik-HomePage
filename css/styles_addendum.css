@@ -160,10 +160,43 @@
   
 }
 
+input:invalid {
+  border: 3px solid rgba(255, 255, 255, 0)
+}
+input:valid {
+  border: 3px solid chartreuse
+}
+
+textarea:valid {
+  border: 3px solid chartreuse
+}
+
+textarea:invalid {
+  border: 3px solid rgba(255, 255, 255, 0)
+}
+
 .input1B {
   height: 200px;
   display: inline-block !important;
   min-width: 100%;
   min-width: 260px;
+}
+
+.send-button
+{
+  font-size:16px;
+  width:140px;
+  height:40px;
+  border-width:1px;
+  color:rgba(0, 0, 0, 1);
+  border-color:#d6bcd6;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+
+  text-shadow: 0px 1px 0px #e1e2ed;
+  background:linear-gradient(#fffefe, #bfb8bf);
+
 }
 
