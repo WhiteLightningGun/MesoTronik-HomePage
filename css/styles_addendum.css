@@ -164,11 +164,12 @@ input:invalid {
   border: 3px solid rgba(255, 255, 255, 0)
 }
 input:valid {
-  border: 3px solid chartreuse
+  border: 3px solid orange
 }
 
 textarea:valid {
-  border: 3px solid chartreuse
+  border: 3px solid orange;
+ 
 }
 
 textarea:invalid {
@@ -178,8 +179,9 @@ textarea:invalid {
 .input1B {
   height: 200px;
   display: inline-block !important;
-  min-width: 100%;
-  min-width: 260px;
+  min-width: 280px;
+  resize: both;
+
 }
 
 .send-button
