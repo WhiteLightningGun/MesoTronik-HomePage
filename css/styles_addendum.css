@@ -157,7 +157,6 @@
   width: 50vmin;
   resize:both;
   min-width: 200px;
-  
 }
 
 input:invalid {
@@ -169,7 +168,6 @@ input:valid {
 
 textarea:valid {
   border: 3px solid rgba(255, 255, 255, 0);
- 
 }
 
 .input1B {
