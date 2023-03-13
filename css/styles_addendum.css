@@ -161,9 +161,11 @@
 
 input:invalid {
   border: 3px solid rgba(255, 255, 255, 0);
+
 }
 input:valid {
   border: 3px solid rgba(255, 255, 255, 0);
+  
 }
 
 textarea:valid {
