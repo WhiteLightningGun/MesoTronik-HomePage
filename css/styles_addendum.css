@@ -190,8 +190,19 @@ textarea:valid {
 
 }
 
-#ErrorBox
+.errorField
 {
   color: red;
   font-style: italic;
+  font-size: 12px;
+}
+
+#ErrorBox
+{
+  visibility: hidden;
+}
+
+#ErrorBox2
+{
+  visibility: hidden;
 }

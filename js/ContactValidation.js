@@ -1,14 +1,36 @@
 var email = document.getElementById("email");
-var errorBox = document.getElementById("ErrorBox");
+var ErrorBox = document.getElementById("ErrorBox");
+var ErrorBox2 = document.getElementById("ErrorBox2");
+var textBox = document.getElementById("textBox");
 
 email.oninvalid = function(e) {
-    e.target.setCustomValidity("");
     if (!e.target.validity.valid)
     {
-        e.target.setCustomValidity("Please input valid email address");
+        e.preventDefault();
+        ErrorBox.style.visibility = "visible";
     } 
+}
 
-    errorBox.innerHTML = "Please input valid email address";
+email.oninput = function(e) {
+    if (e.target.validity.valid)
+    {
+        e.preventDefault();
+        ErrorBox.style.visibility = "hidden";
+    } 
+}
 
+textBox.oninvalid = function(e) {
+    if (!e.target.validity.valid)
+    {
+        e.preventDefault();
+        ErrorBox2.style.visibility = "visible";
+    } 
+}
 
+textBox.oninput = function(e) {
+    if (e.target.validity.valid)
+    {
+        e.preventDefault();
+        ErrorBox2.style.visibility = "hidden";
+    } 
 }

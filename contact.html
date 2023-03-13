@@ -62,7 +62,8 @@
                         <div class="col-sm-8 text-left">
                             <h1 class="fw-bolder pt-1">Contact</h1>
                             <p>Feel free to message me using any of the methods below:</p>
-                            <p id="ErrorBox"></p>
+
+                            
 
                             <!-- "https://formspree.io/f/xnqyvpvn" -->
                         <form
@@ -72,11 +73,14 @@
                             <label class="py-1">
                                 Your email: <br>
                                 <input type="email" name="email" placeholder="you@email.com" required pattern="[^@]+@[^\.]+\..+" class="input1" id="email">
+                                <p class = "errorField" id="ErrorBox">Please enter a valid email address</p>
                             </label>
+                            
                             <br>
                             <label class="py-1 ">
                                 Your message:<br>
-                                <textarea name="message" placeholder="Hello MesoTroniK..." required class="input1 input1B" ></textarea>
+                                <textarea name="message" placeholder="Hello MesoTroniK..." required class="input1 input1B" id="textBox"></textarea>
+                                <p class = "errorField" id="ErrorBox2">Please write a message in the text box.</p>
                             </label>
                             <br>
                             <div class="g-recaptcha" data-theme="dark" data-sitekey="6LeQ1dskAAAAAC9NeqJgYrp6p7Qwsx3feW_D9XFd"></div>
